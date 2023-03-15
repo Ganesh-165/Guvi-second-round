@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register</title>
+   <link rel="stylesheet" href="../bglogin/css/style.css">
+</head>
+<body> 
+<div class="form-container">
+   <form action="../bglogin/php/register.php" method="post" enctype="multipart/form-data">
+      <h3>Register</h3>
+      <input type="text" name="uname" placeholder="Username" class="box" required>
+      <input type="email" name="email" placeholder="Email" class="box" required>
+      <input type="text" name="name" placeholder="Name" class="box" required>
+      <input type="password" name="password" placeholder="Password" class="box" required>
+      <input type="password" name="conformPassword" placeholder="Coinform Password" class="box" required>
+      <input type="submit" name="submit" value="Register" class="btn">
+      <p>Already have an account? <a href="../bglogin/login.html">Login now</a></p>
+   </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Profile</title>
+   <link rel="stylesheet" href="../bglogin/css/style.css">
+</head>
+<body>
+    <div class="update-profile">
+        <form action = "../bglogin/php/profile.php" method="post" enctype="multipart/form-data">
+            <h3>PROFILE</h3>
+            <div class="flex">
+                <div class="inputBox">
+                   <span>UserName </span>
+                   <span>Name </span>
+                   <span>Password</span>
+                   <span>Email</span>
+                </div>
+                <div class="inputBox">
+                    <span>: UserName </span>
+                    <span>: Name</span>
+                    <span>: Password</span>
+                    <span>: Email</span>
+                 </div>
+             </div>
+            <div class="flex">
+                <div class="inputBox">
+                    <span>UserName :</span>
+                    <input type="text" name="uname" placeholder="UserName" class="box">
+                    <span>Email :</span>
+                    <input type="email" name="email" placeholder="Email" class="box">
+                    <span>Name :</span>
+                    <input type="text" name="name" placeholder="Name" class="box">
+                    <span>New Password :</span>
+                    <input type="password" name="password" placeholder="Enter New Password" class="box">
+                    <span>Confirm Password :</span>
+                    <input type="password" name="conformPassword" placeholder="Confirm New Password" class="box">
+                </div>
+            </div>
+            <input type="submit" value="Update" name="submit" class="btn">
+            <a href="../bglogin/login.html" class="delete-btn">Logout</a>
+        </form>
+    </div>
+</body>
+</html>
